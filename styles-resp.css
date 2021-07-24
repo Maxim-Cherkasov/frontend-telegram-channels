@@ -1,0 +1,248 @@
+
+html {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif; 
+    /* font-family: 'Open Sans', sans-serif; */
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.45;
+}
+header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: #A7BBC7;
+    padding: 30px 0 20px 0;
+    text-align: center;
+    min-height: 70vh;
+}
+h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin: 0 0 26px 0;
+    color: black;
+    text-shadow: 6px 6px 10px grey;
+}
+h2 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin: 0 0 18px 0;
+    padding: 5px;
+}
+h2:hover {
+    background: lightsteelblue;
+}
+h2 a {
+    color: black;
+    font-weight: 900;
+    text-shadow: 3px 3px 5px grey;
+}
+.features .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 900px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    max-width: 900px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    color: white;
+    min-width: 150px;
+    font-weight: 500;
+    font-size: 1.45rem;
+    background: #A7BBC7;
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 4px 0;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+header a {
+    text-decoration: none;
+}
+.btn:hover {
+    background: lightblue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+nav {
+    display: flex;
+    align-self: center;
+}
+nav ul {
+    background: linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 0, 
+     rgba(255, 255, 255, 0.2) 0, 
+     rgba(255, 255, 255, 0) 0);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);
+     display: flex;
+     justify-content: space-between;
+     min-width: 50vw;
+     padding-right: 45px;
+}
+nav ul li {
+    display: inline-flex;
+}
+nav ul li a {
+    padding: 10px; 
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+ }
+
+.features {
+    background: #E1E5EA;
+    color: #000000;
+}
+.feature {
+    width: 33%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.feature img {
+    width: 60%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background:#A7BBC7;
+    color: black;
+    text-shadow: 3px 3px 5px grey;
+    min-height: 80px;
+}
+.readme-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.readme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+}
+.readme li > p {
+    font-size: 1.5rem;
+}
+.readme li {
+    list-style-type: none;
+}
+.readme li a {
+    text-decoration: none;
+    display: flex;
+    max-height: 40px;
+    align-items: center;
+}
+
+a img {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 5px;
+}
+
+a > p {
+    color: black;
+    text-shadow: 3px 3px 5px grey;
+}
+@media screen and (max-width: 620px) {
+    .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .features .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+     }
+    .btn {
+        display: flex;
+        justify-content: center;
+        font-size: 1.125rem;
+    }
+    h1 {
+        font-size: 2rem;
+        margin: 0 0 8px 0;
+    }
+    h2 {
+        font-size: 1.125rem;
+    }
+    section {
+        padding: 25px 0 15px 0;
+    } 
+    .feature {
+        min-width: 90%;
+        text-align: left;
+        margin: 0 0 10px 0;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .feature img {
+        width: 80%;
+        min-width: 60px;
+        margin-right: px;
+    }
+    .quote {
+        padding: 30px 0;
+    }
+    blockquote p {
+        font-size: 1.125rem;
+    }
+    blockquote cite {
+        font-size: 0.875rem;
+    }
+    footer {
+        padding: 30px 0 10px 0;
+    }
+}  
+
+/* for big screens */
+
+  @media screen and (min-width: 850px) {
+    .features .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 900px;
+    }
+}
+
+/* for tablets from 650 to 850px. two rows of items in order to dispay them correctly */
+@media screen and (max-width: 850px) {
+    .features .container {
+        justify-content: space-evenly;
+    }
+    .feature {
+        min-width: 45%;
+    }
+}
+
+
