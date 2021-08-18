@@ -84,7 +84,7 @@ h2 a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20vh auto 0 auto;
+    margin: auto;
     padding: 0 20px 0 20px;
     max-width: 900px;
 }
@@ -202,12 +202,7 @@ footer div p {
         font-size: 1.125rem;
     }
     .top-h1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 35vh auto 0 auto;
-        padding: 0 20px 0 20px;
-        max-width: 900px;
+       margin: auto;
     }
     .top-h1 h1 {
         margin: 0;
